@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 10px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background: black;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: 800;
+    color: green;
+}
+
+#navbarSupportedContent a {
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+
+#navbarSupportedContent a:hover {
+    border-bottom: 2px solid green;
+}
+
+#navbarSupportedContent button {
+    background: green;
+    width: 5rem;
+    border-radius: 15px;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-position: center;
+    flex-direction: column;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('black-cake-sits-table-with-brush-it_879145-416.avif') no-repeat center center;
+    background-size: cover;
+    filter: blur(10px);
+    /* Adjusted to 10px for 100% blur */
+    z-index: -1;
+}
+
+#home h1 {
+    font-size: 100px;
+    color: white;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 1px 0px #ccc, 0px 1px 0px #ccc, 0px 1px 0px #ccc, 0px 1px 0px #ccc, 0px 1px 0px #ccc, 0px 1px 0px #ccc, ;
+}
+
+#home p {
+    font-size: 18px;
+    color: white;
+}
+
+#home .input-group {
+    width: 40%;
+    height: 45px;
+}
+
+.signin {
+    background: green !important;
+    color: white !important;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, .3);
+}
+
+/****ABOUT**/
+#about {
+    background: rgb(228, 200, 200);
+}
+
+#about h1 {
+    font-weight: 800;
+    font-size: 50px;
+}
+
+#product {
+    background: rgb(104, 93, 72);
+}
+
+#product h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.card {
+    background: white !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.3),
+        insert 4px 4px 10px white;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+}
+
+.card :hover {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .3);
+    inset: 4px 4px 10px white;
+    transition: 0.2s;
+}
+
+/***contact***/
+act img {
+    height: 100%;
+}
+
+.box {
+    width: 80%;
+    background: red;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#contact input {
+    margin: 10px 0px;
+}
+
+#contact textarea {
+    margin: 10px 0px;
+}
+
+footer {
+    width: 100%;
+    height: 30px;
+    background: black;
+    margin-top: -30px;
+    text-align: center;
+    color: white;
+    padding: 3px;
+}
